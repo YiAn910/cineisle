@@ -842,8 +842,9 @@ function handleMcpMessage(req, msg) {
 
   if (method === "initialize") {
     return rpcResult(id, {
-      protocolVersion: "2024-11-05",
-      capabilities: { tools: {} },
+      protocolVersion: "2025-11-25",
+            capabilities: { tools: {}, streamableHttp: {} },
+
       serverInfo: {
         name: "映屿 CineIsle · Viewing Context",
         version: APP_VERSION
